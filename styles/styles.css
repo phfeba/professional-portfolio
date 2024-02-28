@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: lightblue;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.right header {
+  padding-top: 60px;
+}
+
+header img {
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
