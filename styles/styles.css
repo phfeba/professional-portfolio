@@ -6,17 +6,39 @@
 
 body {
   display: flex;
-  background-color: lightblue;
   justify-content: center;
   min-height: 100vh;
 }
+.right {
+  width: 100%;
+  background-color: darkslategrey;
+  padding-left: 50px;
+  padding-right: 20%;
+  color: wheat;
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 50px;
+  padding-left: 20%;
+}
 
 .right header {
-  padding-top: 60px;
+  padding: 120px 0px 100px 0px;
 }
 
 header img {
-  width: 200px;
+  width: 300px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 30px solid white;
+}
+
+.profile,
+.about,
+.education,
+.achievments {
+  margin-bottom: 50px;
 }
