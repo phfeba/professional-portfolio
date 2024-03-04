@@ -9,18 +9,39 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
-.right {
-  width: 100%;
-  background-color: darkslategrey;
-  padding-left: 50px;
-  padding-right: 20%;
-  color: wheat;
-}
 
-.left {
+.right,
+.left,
+main {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+main {
+  gap: 50px;
+}
+
+.right {
+  background: rgb(210, 196, 196);
+  background: linear-gradient(
+    45deg,
+    rgba(210, 196, 196, 1) 0%,
+    rgba(161, 155, 155, 1) 50%,
+    rgba(54, 52, 52, 1) 100%
+  );
+  padding-left: 50px;
+  padding-right: 20%;
+}
+
+.left {
+  background: linear-gradient(
+    45deg,
+    rgba(71, 69, 69, 1) 0%,
+    rgba(140, 134, 134, 0) 50%,
+    rgba(210, 196, 196, 0) 100%
+  );
+
   align-items: end;
   padding-right: 50px;
   padding-left: 20%;
@@ -34,11 +55,4 @@ header img {
   width: 300px;
   border-radius: 50%;
   border: 30px solid white;
-}
-
-.profile,
-.about,
-.education,
-.achievments {
-  margin-bottom: 50px;
 }
