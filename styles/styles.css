@@ -6,19 +6,26 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   min-height: 100vh;
 }
 
+.main {
+  display: flex;
+}
+
 .right,
-.left,
-main {
-  width: 100%;
+.left {
+  padding-bottom: 200px;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   gap: 50px;
 }
 
@@ -55,4 +62,20 @@ header img {
   width: 300px;
   border-radius: 50%;
   border: 30px solid white;
+}
+footer {
+  margin: -150px auto 0px auto;
+}
+footer h3 {
+  margin-bottom: 20px;
+}
+
+.network {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.network img {
+  width: 50px;
 }
